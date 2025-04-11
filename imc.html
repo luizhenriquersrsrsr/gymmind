@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css"/>
+  <title>Calculadora IMC</title>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">IMC</a></li>
+        <li><a href="#">TMB</a></li>
+        <li><a href="#">PESO IDEAL</a></li>
+        <li><a href="#">DIETA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="nome">
+    <h1>SALUVIDA</h1>
+  </div>
+
+  <div class="image-container">
+    <div class="text">TREINE NO <br> SEU TEMPO.</div>
+  </div>
+
+  <div class="container">
+    <button class="botao">FAÇA PARTE DA NOSSA ACADEMIA</button>
+  </div>
+
+  <!-- IMC Adulto -->
+  <div class="siuu">
+    <h2>Calculadora de IMC (Adulto)</h2>
+    <label>Peso (kg):</label>
+    <input type="number" id="peso-adulto" step="0.1">
+    <label>Altura (m):</label>
+    <input type="number" id="altura-adulto" step="0.01">
+    <button onclick="calcularIMCAdulto()">Calcular IMC</button>
+    <p class="result" id="resultado-imc-adulto"></p>
+  </div>
+
+  <!-- IMC Infantil -->
+  <div class="caixa-formulario">
+    <h2>IMC Infantil</h2>
+    <div class="formulario">
+      <label for="nome-crianca">Nome:</label>
+      <input type="text" id="nome-crianca" placeholder="Nome da criança" required>
+
+      <label for="idade-crianca">Idade (anos):</label>
+      <input type="number" id="idade-crianca" min="1" max="19" required>
+
+      <label for="sexo-crianca">Sexo:</label>
+      <select id="sexo-crianca" required>
+        <option value="">Selecione</option>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+      </select>
+
+      <label for="peso-crianca">Peso (kg):</label>
+      <input type="number" id="peso-crianca" step="0.1" required>
+
+      <label for="altura-crianca">Altura (m):</label>
+      <input type="number" id="altura-crianca" step="0.01" required>
+
+      <button class="botao-enviar" onclick="calcularIMCInfantil()">Calcular</button>
+    </div>
+    <div class="caixa-resultado" id="resultado-imc-crianca"></div>
+  </div>
+
+  <script src="nutri.js"></script>
+</body>
+</html>

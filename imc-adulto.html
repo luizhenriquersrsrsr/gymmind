@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de IMC</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="imc-pagina">
+    <div class="calculadora-imc">
+      <h2>Calculadora de IMC</h2>
+      <label>Peso (kg):</label>
+      <input type="number" id="peso" step="0.1">
+
+      <label>Altura (m):</label>
+      <input type="number" id="altura" step="0.01">
+
+      <button onclick="calcularIMC()">Calcular</button>
+      <p id="resultadoIMC" class="resultado"></p>
+    </div>
+
+    <div class="imc-extra">
+      <h3>Saiba Mais sobre IMC</h3>
+      <video width="100%" controls>
+        <source src="Você sabe o que é IMC_.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+      <p>O IMC (Índice de Massa Corporal) é uma medida utilizada para avaliar se o peso está adequado à altura.</p>
+
+      <div class="tabela-imc">
+        <h4>Classificação de IMC</h4>
+        <table>
+          <tr><th>IMC</th><th>Classificação</th></tr>
+          <tr><td>&lt; 18.5</td><td class="baixo">Abaixo do peso</td></tr>
+          <tr><td>18.5 – 24.9</td><td class="normal">Peso normal</td></tr>
+          <tr><td>25 – 29.9</td><td class="sobrepeso">Sobrepeso</td></tr>
+          <tr><td>30 – 34.9</td><td class="obesidade1">Obesidade Grau I</td></tr>
+          <tr><td>35 – 39.9</td><td class="obesidade2">Obesidade Grau II</td></tr>
+          <tr><td>&gt;= 40</td><td class="obesidade3">Obesidade Grau III</td></tr>
+        </table>
+      </div>
+
+      <div class="dicas-saude">
+        <h4>Dicas de Saúde</h4>
+        <ul>
+          <li>Pratique exercícios regularmente</li>
+          <li>Evite alimentos ultraprocessados</li>
+          <li>Durma bem e mantenha rotina</li>
+          <li>Beba bastante água</li>
+        </ul>
+      </div>
+
+      <a class="botao-saiba-mais" href="#">Saiba mais sobre saúde e nutrição →</a>
+    </div>
+  </div>
+
+  <script src="js/nutri.js"></script>
+</body>
+</html>

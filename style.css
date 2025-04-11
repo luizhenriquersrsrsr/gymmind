@@ -1,0 +1,550 @@
+body{
+
+background-color: black;
+
+}
+
+
+nav ul {
+  display: flex;
+  color: white;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-size: 20px;
+  list-style-type: none;
+  z-index: 9999;
+  position: relative;
+  top: -45px;
+}
+
+
+
+
+header {
+  position: relative;
+  top: -630px;
+}
+header {
+  margin-top: 20px; /* Ajuste o valor conforme necessário */
+}
+
+li {
+    list-style-type: none;
+  }
+  
+
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: left;
+    height: 500px; 
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    font-size: 70px;
+   color: white;
+    padding: -30px;
+   margin: 50px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   top: -640px;
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+  }
+
+  .nome {
+    position: absolute;
+    top: 10px;
+   bottom: 40px;
+    right: -50px;
+    width: 100%;
+    padding: 0px;
+    color: aliceblue;
+    text-align: left;
+    font-size: 20px;
+}
+
+.img{
+
+
+  position: absolute;
+  top: 7%;
+ bottom: 100px;
+  width: 80%;
+  padding: -30px;
+  color: aliceblue;
+  text-align: right;
+  font-size: 15px;
+  right: 400px;
+  
+  
+}
+
+.youtube{
+
+  position: absolute;
+  top: 7%;
+ bottom: 100px;
+  width: 80%;
+  padding: -30px;
+  color: aliceblue;
+  text-align: right;
+  font-size: 15px;
+  right: 350px;
+  
+}
+
+.twitter{
+
+
+  position: absolute;
+  top: 45px;
+ bottom: 90px;
+  width: 80%;
+  padding: -95px;
+  color: aliceblue;
+  text-align: right;
+  font-size: 15px;
+  right: 305px;
+}
+
+/* Altera o cursor para indicar que é clicável */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end; /* Alinha os itens à direita */
+  height: 30px;
+  width: 100%;
+  background-size: cover;
+  background-position: right;
+  position: relative;
+  font-size: 60px;
+  opacity: 1;
+  margin: -30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: gray;
+  top: -700px;
+}
+
+.botao {
+  background-color: transparent; 
+  border: 2px solid white; 
+  border-radius: 50px; 
+  color: white; 
+  padding: 10px 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+
+.banner-imagem {
+  width: 110%; /* Define a largura para ocupar 100% do contêiner pai */
+  height: 700px; /* Define a altura desejada */
+  object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+  object-position: center; /* Opcional: centraliza a imagem dentro do contêiner */
+}
+
+h2{
+  font-size: 30px;
+  }
+    
+  
+  
+  .siuu { 
+    max-width: 350px; 
+    margin: 40px; 
+    padding: 80px; 
+    border: 1px solid #ddd; 
+    border-radius: 30px; 
+    color: black;
+    background-color: azure;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    position: absolute; /* <- necessário para funcionar com 'right' */
+   left: 70px; 
+    top: 100%; /* cuidado: isso joga bem pra baixo! Pode ajustar */
+  }
+  
+    
+  label {
+  margin-bottom: 5px; /* Um pequeno espaço entre o label e o input */
+  }
+    
+  input, select { 
+  width: 100%; 
+  margin: 10px 0; 
+  padding: 10px; 
+  border-radius: 10px;
+  }
+    
+  button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  background: linear-gradient(45deg, hsl(23, 96%, 50%), #a7d511);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 255, 81, 0.8);
+  transition: all 0.3s ease-in-out;
+ 
+  }
+  
+  button:hover {
+  background: linear-gradient(45deg, #a7d511, hsl(23, 96%, 50%));
+  box-shadow: 0 0 20px rgba(255, 204, 0, 1);
+  transform: scale(1.05);
+  }
+  
+  button:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 5px rgba(255, 204, 0, 0.8);
+  }
+  
+    
+  .result { 
+  font-weight: bold; 
+  }
+
+  .caixa-formulario {
+    max-width: 350px;
+    margin: 40px;
+    padding: 80px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    color: black;
+    background-color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 55%; /* Aqui foi o ajuste! Quanto maior, mais pra direita */
+    top: 100%;
+    transform: translateX(-50%); /* Centraliza o ponto de partida */
+  }
+  
+  .formulario label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .formulario input,
+  .formulario select {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .botao-enviar {
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(45deg, hsl(23, 96%, 50%), #a7d511);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 255, 81, 0.8);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .botao-enviar:hover {
+    background: linear-gradient(45deg, #a7d511, hsl(23, 96%, 50%));
+    box-shadow: 0 0 20px rgba(255, 204, 0, 1);
+    transform: scale(1.05);
+  }
+  
+  .botao-enviar:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 5px rgba(255, 204, 0, 0.8);
+  }
+  
+  .caixa-resultado {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f0fff0;
+    border: 2px dashed #32cd32;
+    border-radius: 15px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    color: #333;
+  }
+
+
+
+  /* Menu principal em linha */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  top: -60px;
+}
+
+/* Estilo dos itens principais */
+.menu > li {
+  position: relative;
+}
+
+/* Links principais */
+.menu a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Submenu oculto inicialmente */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%; /* abaixo do item pai */
+  left: 0;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  min-width: 150px;
+  z-index: 1000;
+}
+
+/* Estilo dos itens do submenu */
+.submenu li a {
+  padding: 10px 15px;
+  display: block;
+  color: black;
+
+}
+
+/* Hover nos itens do submenu */
+.submenu li a:hover {
+  background-color: #f0f0f0;
+}
+
+/* MOSTRA o submenu ao passar o mouse no item principal */
+.dropdown:hover .submenu {
+  display: block;
+}
+
+
+.agr {
+  display: flex;
+  position: relative; /* Adicionado */
+  top: -650px;
+  color: white;
+  font-size: 28px;
+  right: -30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.letras3 {
+  display: flex;
+  color: white;
+  font-size: 20px;
+  position: relative;
+  left: 90px; /* move 60px para a direita */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+
+display: flex;
+position: relative;
+
+  right: -800px;
+  top: -990px;
+}
+
+.banner2{
+
+
+  display: flex;
+  justify-content: center;
+  position: relative;
+top: -630px;
+left: -130px;
+}
+
+.banner3{
+
+
+  display: flex;
+  justify-content: center;
+  position: relative;
+top: -1430px;
+left: 160px;
+}
+
+.mudou{
+
+
+  display: flex;
+  color: white;
+  position: relative;
+  top: -1140px;
+  justify-content: center;
+  font-size: 30px;
+  background:linear-gradient(-45deg,#b9fab8,#eae015, #fdde9f, #ffc758, #f4f45d)no-repeat;
+  height: -100px;
+  text-align: center;
+}
+
+
+.los{
+
+
+
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+  top: -1080px;
+  left: -380px;
+
+}
+
+.ny{
+
+
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+  top: -1320px;
+  left: 380px;
+
+
+}
+
+.galeria-horizontal {
+  display: flex;
+  width: 100vw; /* ocupa toda a largura da tela */
+  height: 296px; /* altura fixa */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  top: -1280px;
+}
+
+.galeria-horizontal img {
+  flex: 1; /* cada imagem ocupa espaço igual */
+  height: 100%;
+  object-fit: cover; /* mantém proporção e cobre a área */
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.footer-elegante {
+  background-color: #111;
+  color: #eee;
+  padding: -2110px 30px 20px; /* Era 60px no topo, agora 30px */
+  font-family: 'Segoe UI', sans-serif;
+  margin-top: -1250px;
+}
+
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  top: -1140px;
+}
+
+.footer-logo h1 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-size: 14px;
+  color: #bbb;
+  max-width: 250px;
+}
+
+.footer-links,
+.footer-contato,
+.footer-social {
+  min-width: 200px;
+}
+
+.footer-links h3,
+.footer-contato h3,
+.footer-social h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #f0c14b;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #fff;
+}
+
+.footer-contato p {
+  font-size: 14px;
+  margin: 8px 0;
+  color: #ccc;
+}
+
+.footer-contato i {
+  margin-right: 8px;
+  color: #f0c14b;
+}
+
+.footer-social a {
+  color: #ccc;
+  font-size: 20px;
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #f0c14b;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid #444;
+  font-size: 13px;
+  color: #777;
+}
+
+
+
